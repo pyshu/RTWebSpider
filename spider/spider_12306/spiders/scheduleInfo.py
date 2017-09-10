@@ -4,11 +4,13 @@ __author__ = 'lius'
 import datetime
 import json
 
-from scrapy.spider import BaseSpider
 from scrapy.http import Request
-from spider_12306.items import BriefItem
-from spider_12306.items import InfoItem
-from spider_12306.items import CommitItem
+from scrapy.spider import BaseSpider
+
+from spider.spider_12306.items import BriefItem
+from spider.spider_12306.items import CommitItem
+from spider.spider_12306.items import InfoItem
+
 
 class ScheduleSpider(BaseSpider):
     name = 'scheduleInfo'

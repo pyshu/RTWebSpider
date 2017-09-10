@@ -8,16 +8,15 @@
 import pymysql.cursors
 from scrapy import log
 
-from spider_12306.items import CommitItemS
-from spider_12306.items import CommitItemA
+from spider.spider_12306.items import BriefDeltaItem
+from spider.spider_12306.items import BriefItem
+from spider.spider_12306.items import CommitItem
+from spider.spider_12306.items import CommitItemA
+from spider.spider_12306.items import CommitItemS
+from spider.spider_12306.items import InfoItem
+from spider.spider_12306.items import StationNameItem
+from spider.spider_12306.items import TicketItem
 
-from spider_12306.items import CommitItem
-from spider_12306.items import BriefItem
-from spider_12306.items import InfoItem
-
-from spider_12306.items import BriefDeltaItem
-from spider_12306.items import StationNameItem
-from spider_12306.items import TicketItem
 
 class StationSQLPipeline(object):
     def __init__(self):

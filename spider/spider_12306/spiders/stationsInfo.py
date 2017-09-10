@@ -3,11 +3,13 @@ __author__ = 'lius'
 
 '''客运营业站站点'''
 
-from scrapy.spider import BaseSpider
-from scrapy.http import Request
-from spider_12306.items import StationItem
-from spider_12306.items import CommitItemS
 from scrapy import log
+from scrapy.http import Request
+from scrapy.spider import BaseSpider
+
+from spider.spider_12306.items import CommitItemS
+from spider.spider_12306.items import StationItem
+
 
 class stationsInfo(BaseSpider):
     name = "stationsInfo"

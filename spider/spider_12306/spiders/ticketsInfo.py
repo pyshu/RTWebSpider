@@ -1,19 +1,17 @@
 # -*- coding: utf-8 -*-
 __author__ = 'lius'
 
-import time
 import datetime
 import json
-import urllib
 
 import pymysql.cursors
-
-from scrapy.spider import BaseSpider
 from scrapy.http import Request
-from spider_12306.items import BriefDeltaItem
-from spider_12306.items import StationNameItem
-from spider_12306.items import TicketItem
-from spider_12306.items import CommitItem
+from scrapy.spider import BaseSpider
+
+from spider.spider_12306.items import BriefDeltaItem
+from spider.spider_12306.items import CommitItem
+from spider.spider_12306.items import StationNameItem
+from spider.spider_12306.items import TicketItem
 
 
 class TicketsSpider(BaseSpider):

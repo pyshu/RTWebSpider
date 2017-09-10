@@ -3,12 +3,15 @@ __author__ = 'lius'
 
 '''代售点'''
 
-from scrapy.spider import BaseSpider
-from scrapy.http import Request
-from spider_12306.items import AgencyItem
-from spider_12306.items import CommitItemA
-from scrapy import log
 import json
+
+from scrapy import log
+from scrapy.http import Request
+from scrapy.spider import BaseSpider
+
+from spider.spider_12306.items import AgencyItem
+from spider.spider_12306.items import CommitItemA
+
 
 class agencyInfo(BaseSpider):
     name = "agencyInfo"
